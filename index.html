@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ne İzlesem? - Öneri Motoru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ne İzlesem? 🍿</h1>
+    </header>
+
+  <main>
+    
+    <h2>Önce Seç: Film mi, Dizi mi?</h2>
+    <div class="media-type-selector">
+        <button class="media-btn active" data-type="movie">🎬 Film</button>
+        <button class="media-btn" data-type="tv">📺 Dizi</button>
+    </div>
+    <hr> <h2>Moduna Göre Seç!</h2>
+    <p>Bugün nasıl hissediyorsun?</p>
+    
+    <div class="mood-buttons">
+        <button class="mood-btn" data-movie-id="35" data-tv-id="35">Kahkaha 🤣</button>
+        <button class="mood-btn" data-movie-id="28" data-tv-id="10759">Aksiyon 🔥</button>
+        <button class="mood-btn" data-movie-id="27" data-tv-id="9648">Gerilim 😱</button>
+        <button class="mood-btn" data-movie-id="10749" data-tv-id="18">Duygusal 💖</button> 
+        <button class="mood-btn" data-movie-id="878" data-tv-id="10765">Bilim Kurgu 👽</button>
+        </div>
+    
+    <hr> <h2>Veya... Rastgele Bir Keşfet!</h2>
+    <button id="surpriseButton">ŞAŞIRT BENİ!</button>
+    
+
+    <div id="movieResult">
+        </div>
+
+</main>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

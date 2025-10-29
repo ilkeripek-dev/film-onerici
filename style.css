@@ -1,0 +1,133 @@
+/* --- 1. Genel Sayfa Stili (Sadelikten kurtulma) --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5; /* Açık gri bir arka plan */
+    color: #333; /* Koyu gri yazı rengi */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- 2. Ana İçerik Kutusu (Her şeyi bir araya toplayan kart) --- */
+main {
+    max-width: 700px; /* İçerik çok fazla genişlemesin */
+    margin: 30px auto; /* Kutuyu hem üstten/alttan boşluklu hem de yatayda ortalı yapar */
+    background: #ffffff; /* Beyaz arka plan */
+    padding: 25px 40px; /* İçeriden boşluk */
+    border-radius: 12px; /* Köşeleri yuvarla (modern görünüm) */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07); /* Hafif bir gölge */
+    text-align: center; /* İçindeki her şeyi (buton, başlık) ortala */
+}
+
+h1 {
+    color: #4A148C; /* Koyu mor bir başlık */
+}
+
+/* --- 3. Butonumuzun Stili --- */
+#surpriseButton {
+    background-color: #673AB7; /* Canlı bir mor */
+    color: white; /* Yazı rengi beyaz */
+    padding: 12px 25px; /* Butonu biraz büyütelim */
+    border: none; /* Kenar çizgisi olmasın */
+    border-radius: 8px; /* Köşeleri yuvarlak */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /* Üzerine gelince el işareti çıksın */
+    transition: background-color 0.3s ease; /* Yumuşak renk geçişi */
+}
+
+#surpriseButton:hover {
+    background-color: #512DA8; /* Üzerine gelince hafif koyulaşsın */
+}
+
+/* --- 4. VE EN ÖNEMLİSİ: O BÜYÜK RESİM SORUNU --- */
+#movieResult img {
+    max-width: 400px; /* EN FAZLA 400px genişliğinde olsun */
+    height: auto; 
+    border-radius: 8px;
+    display: block; /* Ortalanabilmesi için 'blok' element yapıyoruz */
+    margin: 20px auto 0 auto; /* Üstten 20px, sağ/soldan 'auto' (ortala) */
+}
+
+/* --- 5. Sonuç Alanı --- */
+#movieResult h2 {
+    color: #333;
+}
+
+/* Film özetini sola yaslayalım, paragraf gibi okunsun */
+#movieResult p {
+    text-align: left;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Puanı biraz vurgulayalım */
+#movieResult p strong {
+    color: #333;
+}
+/* --- 6. YENİ BÖLÜM: Mod Butonları --- */
+
+/* Butonları yan yana güzelce dizen kapsayıcı (div) */
+.mood-buttons {
+    display: flex; /* Butonları yan yana dizer */
+    flex-wrap: wrap; /* Sığmazlarsa alt satıra atar */
+    justify-content: center; /* Buton grubunu yatayda ortalar */
+    gap: 10px; /* Butonlar arasına 10px boşluk koyar */
+    margin-bottom: 20px; /* Alttaki çizgiyle (hr) arasını açar */
+}
+
+/* Mod butonlarının her birinin stili */
+.mood-btn {
+    background-color: #f0f0f0; /* Nötr bir gri arka plan */
+    color: #555; /* Koyu gri yazı */
+    padding: 10px 15px;
+    border: 1px solid #ddd; /* İnce bir kenarlık */
+    border-radius: 20px; /* Süper yuvarlak kenarlar (modern hap görünümü) */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Yumuşak geçiş */
+}
+
+/* Mod butonunun üzerine gelince */
+.mood-btn:hover {
+    background-color: #e0e0e0; /* Hafif koyulaşsın */
+    border-color: #ccc;
+    transform: translateY(-2px); /* Hafifçe yukarı kalksın */
+}
+/* --- 7. YENİ BÖLÜM: Medya Türü (Film/Dizi) Seçici --- */
+
+/* Butonları yan yana tutan kapsayıcı */
+.media-type-selector {
+    display: flex;
+    justify-content: center; /* Ortala */
+    gap: 10px; /* Aralarında boşluk */
+    margin-bottom: 20px; /* Alttaki çizgiyle arasını aç */
+}
+
+/* Film ve Dizi butonlarının genel stili */
+.media-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #ddd; /* Pasifken soluk bir kenarlık */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Pasifken soluk bir arkaplan */
+    color: #aaa; /* Pasifken soluk bir yazı */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Tıklanabilirlik hissi için üzerine gelince hafif büyüme */
+.media-btn:hover {
+    transform: scale(1.05);
+}
+
+/* === EN ÖNEMLİ KISIM: AKTİF BUTONUN STİLİ === */
+/* '.active' class'ına sahip olan .media-btn nasıl görünecek? */
+.media-btn.active {
+    background-color: #673AB7; /* Ana rengimiz (mor) */
+    color: white; /* Beyaz yazı */
+    border-color: #673AB7; /* Kenarlık da mor */
+    box-shadow: 0 4px 12px rgba(103, 58, 183, 0.3); /* Mor bir parlama */
+}
