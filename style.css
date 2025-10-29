@@ -42,6 +42,7 @@ h1 {
 
 /* --- 4. VE EN ÖNEMLİSİ: O BÜYÜK RESİM SORUNU --- */
 #movieResult img {
+    width: 100%; /* YENİ! Kutuya sığması için esnetir */
     max-width: 400px; /* EN FAZLA 400px genişliğinde olsun */
     height: auto; 
     border-radius: 8px;
@@ -130,4 +131,5 @@ h1 {
     color: white; /* Beyaz yazı */
     border-color: #673AB7; /* Kenarlık da mor */
     box-shadow: 0 4px 12px rgba(103, 58, 183, 0.3); /* Mor bir parlama */
+
 }
