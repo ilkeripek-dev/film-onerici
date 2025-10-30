@@ -226,6 +226,55 @@ h1 {
     background-color: #C62828; /* Koyu kırmızı */
 }
 
+/* --- 10. YENİ BÖLÜM: Mobil Uyumluluk (Responsive) --- */
+
+/* '@media' kuralı: Sadece ekran genişliği 600px veya daha az ise çalışır */
+@media (max-width: 600px) {
+
+    /* Ana kartın kenar boşluklarını azalt, telefonda daha çok yer olsun */
+    main {
+        padding: 20px 15px; /* Üst/alt 20, sağ/sol 15px */
+    }
+
+    /* Mod butonları (Kahkaha, Aksiyon vs.) sığmazsa daha iyi görünsün */
+    .mood-buttons {
+        gap: 8px; /* Aradaki boşlukları biraz azalt */
+    }
+    
+    .mood-btn {
+        padding: 8px 12px; /* Butonları biraz küçült */
+        font-size: 13px;
+    }
+
+    /* === İŞTE O "ORANTISIZ" SORUNUN ÇÖZÜMÜ === */
+    
+    /* Kayıtlı liste öğesi (.saved-item) */
+    .saved-item {
+        /* Flexbox'ın öğeleri alt satıra atmasına izin ver */
+        flex-wrap: wrap;
+        
+        /* Dikey boşluğu biraz ayarla */
+        gap: 10px 15px; 
+    }
+
+    /* Başlık alanı (.item-info) */
+    .saved-item .item-info {
+        /* Başlığın "Sil" butonunun yanına değil, 
+           resmin (40px) yanına sığmasını sağlıyoruz. */
+        flex-basis: calc(100% - 40px - 15px); /* Genişlik = %100 - resim - boşluk */
+        flex-grow: 0; /* Büyümesine gerek yok, yerini belirledik */
+        font-size: 15px; /* Yazıyı biraz küçült */
+    }
+    
+    /* "Sil ❌" butonu */
+    .remove-btn {
+        /* Buton alt satıra geçtiğinde TÜM GENİŞLİĞİ KAPLASIN! */
+        width: 100%;
+        margin-top: 5px; /* Üstündeki yazıdan biraz ayır */
+        text-align: center; /* Buton yazısını ortala */
+    }
+}
+
 
 
 
