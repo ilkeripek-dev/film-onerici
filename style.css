@@ -274,6 +274,59 @@ h1 {
         text-align: center; /* Buton yazısını ortala */
     }
 }
+/* --- 11. YENİ BÖLÜM: Arama Çubuğu --- */
+
+/* Arama kutusunu ve butonu yan yana tutan konteyner */
+.search-container {
+    display: flex; /* Yan yana diz */
+    gap: 10px; /* Aralarına 10px boşluk koy */
+    margin: 20px 0;
+}
+
+/* Arama metin kutusunun kendisi */
+#searchInput {
+    flex-grow: 1; /* Geriye kalan tüm boşluğu kapla (bu, butonu sağa iter) */
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+/* Arama kutusuna tıklandığında (focus) */
+#searchInput:focus {
+    border-color: #673AB7; /* Ana mor rengimizle parlasın */
+    outline: none; /* Varsayılan mavi parlamayı kaldır */
+}
+
+/* Arama butonu */
+#searchButton {
+    background-color: #673AB7; /* Ana mor renk */
+    color: white;
+    padding: 0 20px; /* Genişliği padding ile ayarla (içeriği "Ara 🔍" olsun) */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #512DA8; /* Koyu mor */
+}
+
+/* Mobil cihazlarda arama çubuğu ve buton (sığmazlarsa) alt alta düşsün */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column; /* Yan yana değil, alt alta diz */
+        gap: 12px;
+    }
+    
+    #searchButton {
+        padding: 12px 20px; /* Alt alta düşünce tam genişlikte gibi dursun (padding'i arttır) */
+    }
+}
 
 
 
