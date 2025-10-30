@@ -198,10 +198,11 @@ h1 {
 
 /* Listedeki küçük resim */
 .saved-item img {
-    width: 50px; /* Küçük resimler */
-    height: 75px; /* Sabit yükseklik, en-boy oranı bozulabilir ama düzen sağlar */
-    object-fit: cover; /* Resim 60x90 alana sığsın (kırparak) */
+    width: 40px; /* Küçük resimler */
+    height: 60px; /* Sabit yükseklik, en-boy oranı bozulabilir ama düzen sağlar */
+    object-fit: cover; /* Resim 40x60 alana sığsın (kırparak) */
     border-radius: 4px;
+    flex-shrink: 0; /* (Ekstra güvenlik: Küçülürken ezilmesin) */
 }
 
 /* Listedeki başlık ve ikon */
@@ -224,4 +225,5 @@ h1 {
 .remove-btn:hover {
     background-color: #C62828; /* Koyu kırmızı */
 }
+
 
