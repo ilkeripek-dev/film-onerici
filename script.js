@@ -156,7 +156,11 @@ function sonucuEkranaBas(data) {
         const yazarlar = volumeInfo.authors ? volumeInfo.authors.join(', ') : 'Bilinmiyor';
         ozet = volumeInfo.description ? volumeInfo.description : `Yazar: ${yazarlar}`;
         // Kitap kapakları:
-        posterUrl = volumeInfo.imageLinks ? volumeInfo.imageLinks.thumbnail : '';
+        // posterUrl'i alırken Google'ın 'zoom' hilesini uygulayalım
+posterUrl = volumeInfo.imageLinks ? volumeInfo.imageLinks.thumbnail : '';
+if (posterUrl) {
+    posterUrl = posterUrl.replace('zoom=1', 'zoom=0'); // Daha net resim için!
+}
         // Kitap puanı (varsa):
         puan = volumeInfo.averageRating ? `${volumeInfo.averageRating} / 5` : 'Puanlanmamış';
 
@@ -188,3 +192,4 @@ function hataMesajiGoster(mesaj) {
     console.error("Hata oluştu:", mesaj);
     sonucAlani.innerHTML = `<p>Üzgünüz, bir hata oluştu: ${mesaj}</p>`;
 }
+
