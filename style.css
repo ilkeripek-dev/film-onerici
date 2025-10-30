@@ -133,3 +133,26 @@ h1 {
     box-shadow: 0 4px 12px rgba(103, 58, 183, 0.3); /* Mor bir parlama */
 
 }
+/* --- 8. YENİ BÖLÜM: Kayıtlı Liste Butonu --- */
+.list-header {
+    text-align: right; /* Butonu sağa yaslayalım */
+    margin-bottom: -10px; /* Alttaki çizgiye biraz yaklaşsın */
+}
+
+.list-btn {
+    background-color: #00796B; /* Ana mor renkten farklı, yeşilimsi bir renk */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list-btn:hover {
+    background-color: #004D40; /* Koyu yeşil */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 77, 64, 0.3);
+}
