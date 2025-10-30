@@ -156,3 +156,71 @@ h1 {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 77, 64, 0.3);
 }
+
+/* --- 9. YENİ BÖLÜM: Kayıtlı Liste Görünümü --- */
+
+/* "Listeme Ekle" butonunun (saveButton) stili */
+#saveButton {
+    background-color: #00796B; /* "Kayıtlı Listem" butonuyla aynı renk */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Üstündeki özetten ayır */
+}
+
+#saveButton:hover {
+    background-color: #004D40;
+}
+
+/* Tüm kayıtlı öğeleri tutan ana konteyner */
+.saved-list {
+    margin-top: 20px;
+    text-align: left; /* Listenin içindekiler sola dayalı olsun */
+}
+
+/* Listedeki her bir öğenin (satırın) stili */
+.saved-item {
+    display: flex; /* Öğeleri (resim, yazı, buton) yan yana diz */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: space-between; /* Aralarına boşluk koy (yazı ortada, buton sonda) */
+    background-color: #f9f9f9; /* Hafif bir arka plan */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 15px; /* Aralarındaki boşluk */
+}
+
+/* Listedeki küçük resim */
+.saved-item img {
+    width: 60px; /* Küçük resimler */
+    height: 90px; /* Sabit yükseklik, en-boy oranı bozulabilir ama düzen sağlar */
+    object-fit: cover; /* Resim 60x90 alana sığsın (kırparak) */
+    border-radius: 4px;
+}
+
+/* Listedeki başlık ve ikon */
+.saved-item .item-info {
+    flex-grow: 1; /* Geriye kalan tüm boşluğu kapla (butonu en sağa iter) */
+    font-size: 16px;
+}
+
+/* Listedeki "Sil" butonu */
+.remove-btn {
+    background-color: #E53935; /* Kırmızı (Tehlike) */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.remove-btn:hover {
+    background-color: #C62828; /* Koyu kırmızı */
+}
