@@ -12,25 +12,26 @@
         <h1>Ne İzlesem? 🍿</h1>
     </header>
 
-  <main>
+   <main>
     
-    <h2>Önce Seç: Film mi, Dizi mi?</h2>
+    <h2>Önce Seç: Film mi, Dizi mi, Kitap mı?</h2>
     <div class="media-type-selector">
         <button class="media-btn active" data-type="movie">🎬 Film</button>
         <button class="media-btn" data-type="tv">📺 Dizi</button>
+        <button class="media-btn" data-type="book">📚 Kitap</button>
     </div>
     <hr> <h2>Moduna Göre Seç!</h2>
     <p>Bugün nasıl hissediyorsun?</p>
     
     <div class="mood-buttons">
-        <button class="mood-btn" data-movie-id="35" data-tv-id="35">Kahkaha 🤣</button>
-        <button class="mood-btn" data-movie-id="28" data-tv-id="10759">Aksiyon 🔥</button>
-        <button class="mood-btn" data-movie-id="27" data-tv-id="9648">Gerilim 😱</button>
-        <button class="mood-btn" data-movie-id="10749" data-tv-id="18">Duygusal 💖</button> 
-        <button class="mood-btn" data-movie-id="878" data-tv-id="10765">Bilim Kurgu 👽</button>
-        </div>
+        <button class="mood-btn" data-movie-id="35" data-tv-id="35" data-book-subject="Comedy">Kahkaha 🤣</button>
+        <button class="mood-btn" data-movie-id="28" data-tv-id="10759" data-book-subject="Action">Aksiyon 🔥</button>
+        <button class="mood-btn" data-movie-id="27" data-tv-id="9648" data-book-subject="Thriller">Gerilim 😱</button>
+        <button class="mood-btn" data-movie-id="10749" data-tv-id="18" data-book-subject="Romance">Duygusal 💖</button> 
+        <button class="mood-btn" data-movie-id="878" data-tv-id="10765" data-book-subject="Science Fiction">Bilim Kurgu 👽</button>
+    </div>
     
-    <hr> <h2>Veya... Rastgele Bir Keşfet!</h2>
+    <hr> <h2>Veya... Rastgele Keşfet!</h2>
     <button id="surpriseButton">ŞAŞIRT BENİ!</button>
     
 
@@ -38,8 +39,10 @@
         </div>
 
 </main>
+    
    
 
     <script src="script.js"></script>
 </body>
+
 </html>
