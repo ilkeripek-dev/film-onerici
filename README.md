@@ -17,7 +17,7 @@ Projeyi canlı olarak denemek için buraya tıklayın:
 Bu web uygulaması aşağıdakileri yapabilir:
 
   * **3 Farklı Medya Türü:** Film, Dizi veya Kitap arasında seçim yapabilme.
-  * ** Moda Göre Keşif:** "Aksiyon", "Komedi", "Gerilim" gibi önceden tanımlanmış mod/tür butonlarıyla rastgele öneriler alma.
+  * **Moda Göre Keşif:** "Aksiyon", "Komedi", "Gerilim" gibi önceden tanımlanmış mod/tür butonlarıyla rastgele öneriler alma.
   * **İsme Göre Arama:** Kullanıcının girdiği anahtar kelimeye (örn: "Interstellar", "Dune") göre 3 API'de de arama yapma.
   * **Rastgele Keşif:** "Şaşırt Beni!" butonuyla o an popüler olan rastgele bir yapımı keşfetme.
   * **Kişisel Liste:** `localStorage` kullanarak beğenilen önerileri "Kayıtlı Listem"e ekleyebilme ve bu listeden silebilme.
