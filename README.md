@@ -1,18 +1,18 @@
-# 🎬📚 Ne İzlesem? - Film, Dizi & Kitap Öneri Motoru
+#  Ne İzlesem? - Film, Dizi & Kitap Öneri Motoru
 
 Bu proje, "Bugün ne izlesem/okusam?" kararsızlığına son vermek için geliştirilmiş kişisel bir öneri motorudur. 
 Üç farklı API (TMDB ve Google Books) ile konuşarak kullanıcıya moduna, tür seçimine veya aradığı isme göre öneriler sunar.
 
 *Bu proje, benim ilk kapsamlı web geliştirme projelerimden biridir.*
 
- 🚀 Canlı Demo
+  Canlı Demo
 
 Projeyi canlı olarak denemek için buraya tıklayın:
 **https://ilkeripek-dev.github.io/film-onerici/**
 
 ---
 
-## ✨ Özellikler
+##  Özellikler
 
 Bu web uygulaması aşağıdakileri yapabilir:
 
@@ -25,7 +25,7 @@ Bu web uygulaması aşağıdakileri yapabilir:
 
 ---
 
-## 🛠️ Öğrenilen Teknolojiler ve Beceriler
+##  Öğrenilen Teknolojiler ve Beceriler
 
 Bu projeyi geliştirirken aşağıdaki teknolojileri ve konseptleri öğrenme ve uygulama fırsatı buldum:
 
@@ -49,7 +49,7 @@ Bu projeyi geliştirirken aşağıdaki teknolojileri ve konseptleri öğrenme ve
 
 ---
 
-## 🧠 Karşılaşılan En Büyük Zorluk (ve Çözümü)
+##  Karşılaşılan En Büyük Zorluk (ve Çözümü)
 
 Bu projedeki en zorlu kısım, "Kitap" özelliğini eklerken karşılaştığım `403 (Forbidden)` hatasıydı.
 
