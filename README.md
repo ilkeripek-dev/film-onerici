@@ -37,15 +37,15 @@ Bu projeyi geliştirirken aşağıdaki teknolojileri ve konseptleri öğrenme ve
   CSS Değişkenleri ve modern stil teknikleri.
       
 * **Modern JavaScript (ES6+):**
-  DOM (Document Object Model) Yönetimi:** HTML elemanlarını seçme, yaratma ve dinamik olarak güncelleme.
-  API Entegrasyonu: `fetch` kullanarak harici sunuculara (TMDB, Google Books) asenkron istekler atma (`GET`).
-  JSON Veri İşleme: API'lerden gelen JSON verisini okuma, ayrıştırma ve işleme.
-  `localStorage`: Kullanıcının kişisel listesini tarayıcı hafızasında saklama ve yönetme.
-  Durum Yönetimi (State Management): Seçili olan medya türünü (`movie`, `tv`, `book`) bir değişkende tutarak tüm uygulamanın davranışını dinamik olarak değiştirme.
-  Olay Delegasyonu (Event Delegation): Dinamik olarak oluşturulan "Sil" ve "Ekle" butonları için verimli olay dinleyicileri kurma.
-  API Güvenliği: Google Cloud Console'da API anahtarları oluşturma ve bu anahtarları **HTTP Yönlendirici (Referrer)** kısıtlamalarıyla
-  sadece belirli bir web sitesi (GitHub Pages adresim) için güvence altına alma.
-  Dağıtım (Deployment): Projeyi **GitHub Pages** üzerinden tüm dünyanın erişebileceği canlı bir web sitesi olarak yayınlama.
+  * **DOM (Document Object Model) Yönetimi:** HTML elemanlarını seçme, yaratma ve dinamik olarak güncelleme.
+  * **API Entegrasyonu:** `fetch` kullanarak harici sunuculara (TMDB, Google Books) asenkron istekler atma (`GET`).
+  * **JSON Veri İşleme:** API'lerden gelen JSON verisini okuma, ayrıştırma ve işleme.
+  * **`localStorage`:** Kullanıcının kişisel listesini tarayıcı hafızasında saklama ve yönetme.
+  * **Durum Yönetimi (State Management):** Seçili olan medya türünü (`movie`, `tv`, `book`) bir değişkende tutarak tüm uygulamanın davranışını dinamik olarak değiştirme.
+  * **Olay Delegasyonu (Event Delegation):** Dinamik olarak oluşturulan "Sil" ve "Ekle" butonları için verimli olay dinleyicileri kurma.
+  * **API Güvenliği:** Google Cloud Console'da API anahtarları oluşturma ve bu anahtarları **HTTP Yönlendirici (Referrer)** kısıtlamalarıyla
+  * **sadece belirli bir web sitesi (GitHub Pages adresim) için güvence altına alma.
+  * **Dağıtım (Deployment):** Projeyi **GitHub Pages** üzerinden tüm dünyanın erişebileceği canlı bir web sitesi olarak yayınlama.
 
 ---
 
@@ -60,4 +60,4 @@ Bu projedeki en zorlu kısım, "Kitap" özelliğini eklerken karşılaştığım
 
 Kısıtlamaları geçici olarak "None" (Hiçbiri) yaparak sorunun gerçekten bu olduğunu kanıtladıktan sonra, doğru kuralı (`ilkeripek-dev.github.io/*`) yazıp 
 Google'ın sunucularının bu değişikliği algılaması için 5-10 dakika bekleyerek sorunu kalıcı olarak çözdüm.
-Bu, bana API güvenliğinin pratikte ne kadar önemli (ve hassas) olduğunu öğretti.
+Bu, bana API güvenliğinin pratikte ne kadar önemli ve hassas olduğunu öğretti.
